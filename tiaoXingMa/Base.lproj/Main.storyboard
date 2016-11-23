@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mnI-Z3-0iH">
+                                <rect key="frame" x="40" y="40" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mnI-Z3-0iH" secondAttribute="height" id="01R-wO-YkD"/>
+                                    <constraint firstAttribute="width" constant="200" id="OOR-Fk-jg9"/>
+                                    <constraint firstAttribute="width" constant="100" id="WP7-h2-Qs6"/>
+                                    <constraint firstAttribute="width" constant="100" id="cEu-xu-YAJ"/>
+                                    <constraint firstAttribute="height" constant="40" id="vnn-js-FAR"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WP7-h2-Qs6"/>
+                                        <exclude reference="cEu-xu-YAJ"/>
+                                        <exclude reference="vnn-js-FAR"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ppp.png" translatesAutoresizingMaskIntoConstraints="NO" id="FU6-tR-brm">
+                                <rect key="frame" x="90" y="125" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dhq-0j-zd1"/>
+                                    <constraint firstAttribute="width" constant="100" id="wf6-sf-il3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0F-0P-9LI">
+                                <rect key="frame" x="40" y="550" width="60" height="30"/>
+                                <state key="normal" title="本地存储"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lIZ-ju-joz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64480358299999996" green="1" blue="0.37398760390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mnI-Z3-0iH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="3r3-JF-mrR"/>
+                            <constraint firstItem="FU6-tR-brm" firstAttribute="centerX" secondItem="mnI-Z3-0iH" secondAttribute="centerX" id="HmF-ak-DeF"/>
+                            <constraint firstItem="mnI-Z3-0iH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="LdT-i8-JZo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b0F-0P-9LI" secondAttribute="bottom" constant="20" id="WRe-iN-qx9"/>
+                            <constraint firstItem="b0F-0P-9LI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="g9a-ex-scm"/>
+                            <constraint firstItem="FU6-tR-brm" firstAttribute="centerY" secondItem="mnI-Z3-0iH" secondAttribute="centerY" id="lbh-fJ-ZBp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ddddd" destination="mnI-Z3-0iH" id="u1j-ma-Iqz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="415"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ppp.png" width="93" height="32"/>
+    </resources>
+</document>
